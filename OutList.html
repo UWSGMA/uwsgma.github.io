@@ -46,11 +46,16 @@
         
         header img {
             width: calc(100px + 10px * log1p(var(--vw-multiplier))); /* 100px is the base size, adjust as needed */
-            /* ... other styles ... */
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
         }
 
     
         header div {
+            transform: translateY(20%)
             text-align: center; /* Center the text within its container */
         }
         
