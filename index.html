@@ -34,8 +34,11 @@
         header h1, header p {
             position: relative;
             z-index: 2;
-            mix-blend-mode: screen;
-            color: #a566e3; /* Same color as the header background */
+            background-image: url('https://science.nasa.gov/wp-content/uploads/2023/09/solarspectrum.jpg');
+            -webkit-background-clip: text;
+            color: transparent;
+            background-position: center center;
+            background-attachment: fixed;
         }
 
         .content {
