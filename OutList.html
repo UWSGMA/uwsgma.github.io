@@ -40,10 +40,15 @@
             justify-content: flex-start; /* Align items to the start */
         }
     
-        header img {
-            width: 20vw; /* Adjust the width as needed */
-            margin-right: 20px; /* Add some spacing between the logo and the text */
+        :root {
+            --vw-multiplier: calc(100vw / 100); /* Adjust the denominator to control the scaling */
         }
+        
+        header img {
+            width: calc(100px + 10px * log1p(var(--vw-multiplier))); /* 100px is the base size, adjust as needed */
+            /* ... other styles ... */
+        }
+
     
         header div {
             text-align: center; /* Center the text within its container */
