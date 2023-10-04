@@ -1,1 +1,0 @@
-# uwsgma.github.io
