@@ -41,11 +41,11 @@
         }
     
         :root {
-            --vw-multiplier: calc(100vw / 100); /* Adjust the denominator to control the scaling */
+            --vw-multiplier: calc(100vw / 1000); /* Adjust the denominator to control the scaling */
         }
-        
+    
         header img {
-            width: calc(100px + 10px * log1p(var(--vw-multiplier))); /* 100px is the base size, adjust as needed */
+            width: calc(2vw + 6vw * log1p(var(--vw-multiplier))); /* 100px is the base size, adjust as needed */
             position: absolute;
             left: 15px;
             top: 50%;
