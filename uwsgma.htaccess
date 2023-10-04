@@ -1,0 +1,3 @@
+AuthType UWNetID
+AuthName "UW NetID Restricted"
+require valid-user
