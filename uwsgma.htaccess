@@ -1,3 +1,5 @@
-AuthType UWNetID
-AuthName "UW NetID Restricted"
-require valid-user
+<Files "OutList.html">
+    AuthType UWNetID
+    AuthName "UW NetID Restricted"
+    require valid-user
+</Files>
