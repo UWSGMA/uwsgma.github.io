@@ -33,19 +33,25 @@
         }
 
         header {
-            background-color: rgba(85, 35, 222, 1);
+            background-color: rgba(75, 46, 131, 1);
             padding: 10px;
             text-align: center;
             position: relative;
+            z-index: 2; /* This ensures the text is above the image */
         }
 
         header img {
-            height: 90px;
+            height: 20%; /* This will make the logo's width 20% of the viewport's width */
             position: absolute;
             left: 15px;
             top: 50%;
             transform: translateY(-50%);
-            z-index: 1;
+            z-index: 1; /* This ensures the image is below the text but above the background color */
+        }
+
+        header h1, header p {
+            position: relative; /* This ensures the text is above the image */
+            z-index: 1; /* This ensures the text is above the image */
         }
 
         nav {
@@ -88,7 +94,6 @@
 
     </style>
 </head>
-
 <body>
     <header>
         <a href="home.html">
