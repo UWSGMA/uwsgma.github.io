@@ -1,7 +1,0 @@
-AuthType Shibboleth
-<IfVersion < 2.4>
-  ShibCompatWith24 on
-</IfVersion>
-ShibRequestSetting requireSession true
-ShibRequestSetting redirectToSSL 443
-require shib-user joshg sallyt jcat ifc2002
