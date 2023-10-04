@@ -36,14 +36,16 @@
             background-color: rgba(85, 35, 222, 1);
             padding: 10px;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            position: relative;
         }
 
         header img {
             height: 80px;
-            margin-left: 15px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
         }
 
         nav {
@@ -89,7 +91,9 @@
 
 <body>
     <header>
-        <img src="Simplified UW Astro Logo (1).png" alt="UW Astro Logo">
+        <a href="index.html">
+            <img src="Simplified UW Astro Logo (1).png" alt="UW Astro Logo">
+        </a>
         <h1>About UW SGMA</h1>
     </header>
     <nav>
