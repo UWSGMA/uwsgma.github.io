@@ -1,4 +1,4 @@
-# uwsgma.github.io
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,9 +13,23 @@
         }
 
         header {
-            background-color: #a566e3; /* Queer-themed color */
+            background: url('https://science.nasa.gov/wp-content/uploads/2023/09/solarspectrum.jpg') no-repeat center center fixed;
+            background-size: cover;
             padding: 10px;
             text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #a566e3; /* Queer-themed color */
+            opacity: 0.7;
+            z-index: -1;
         }
 
         .content {
@@ -23,7 +37,7 @@
         }
 
         .content h2 {
-            color: #6630fc /* Queer-themed color */
+            color: #6630fc; /* Queer-themed color */
         }
 
         .content p {
@@ -46,7 +60,6 @@
     <header>
         <h1>University of Washington's</h1>
         <h1>Sexual-Orientation and Gender Minorities in Astronomy</h1>
-        
         <p>Inspired by AAS SGMA</p>
     </header>
 
