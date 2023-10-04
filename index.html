@@ -14,45 +14,58 @@
             position: relative;
         }
 
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(40, 42, 54, 0.4); /* Dark theme background with opacity */
-            z-index: -1;
-        }
+       html, body {
+    height: 100%;
+}
 
-        header {
-            background-color: rgba(121, 73, 252, 1); /* Translucent queer-themed color */
-            padding: 10px;
-            text-align: center;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://science.nasa.gov/wp-content/uploads/2023/09/solarspectrum.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f8f8f2;
+    position: relative;
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Stack children vertically */
+}
 
-        .content {
-            padding: 20px;
-            background-color: rgba(40, 42, 54, 0.8); /* Translucent dark theme background */
-        }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(40, 42, 54, 0.7);
+    z-index: -1;
+}
 
-        .content h2 {
-            color: #7949fc; /* Queer-themed color */
-        }
+header {
+    background-color: rgba(121, 73, 252, 0.8);
+    padding: 10px;
+    text-align: center;
+}
 
-        .content p {
-            text-align: justify;
-        }
+.content {
+    padding: 20px;
+    background-color: rgba(40, 42, 54, 0.8);
+    flex: 1; /* Make content grow to take up available space */
+}
 
-        footer {
-            background-color: rgba(98, 114, 164, 0.8); /* Translucent footer color */
-            padding: 10px;
-            text-align: center;
-            color: #f8f8f2;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+.content h2 {
+    color: #7949fc;
+}
+
+.content p {
+    text-align: justify;
+}
+
+footer {
+    background-color: rgba(98, 114, 164, 0.8);
+    padding: 10px;
+    text-align: center;
+    color: #f8f8f2;
+}
+
     </style>
 </head>
 
