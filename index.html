@@ -12,59 +12,64 @@
             background-size: cover;
             color: #f8f8f2;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
-       html, body {
-    height: 100%;
-}
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(40, 42, 54, 0.7);
+            z-index: -1;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background: url('https://science.nasa.gov/wp-content/uploads/2023/09/solarspectrum.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #f8f8f2;
-    position: relative;
-    display: flex; /* Add flex display */
-    flex-direction: column; /* Stack children vertically */
-}
+        header {
+            background-color: rgba(121, 73, 252, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(40, 42, 54, 0.7);
-    z-index: -1;
-}
+        nav {
+            background-color: rgba(40, 42, 54, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
 
-header {
-    background-color: rgba(121, 73, 252, 0.8);
-    padding: 10px;
-    text-align: center;
-}
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #f8f8f2;
+            transition: color 0.3s ease;
+        }
 
-.content {
-    padding: 20px;
-    background-color: rgba(40, 42, 54, 0.8);
-    flex: 1; /* Make content grow to take up available space */
-}
+        nav a:hover {
+            color: #7949fc;
+        }
 
-.content h2 {
-    color: #7949fc;
-}
+        .content {
+            padding: 20px;
+            background-color: rgba(40, 42, 54, 0.8);
+            flex: 1;
+        }
 
-.content p {
-    text-align: justify;
-}
+        .content h2 {
+            color: #7949fc;
+        }
 
-footer {
-    background-color: rgba(98, 114, 164, 0.8);
-    padding: 10px;
-    text-align: center;
-    color: #f8f8f2;
-}
+        .content p {
+            text-align: justify;
+        }
+
+        footer {
+            background-color: rgba(98, 114, 164, 0.8);
+            padding: 10px;
+            text-align: center;
+            color: #f8f8f2;
+        }
 
     </style>
 </head>
@@ -75,6 +80,13 @@ footer {
         <h1>Sexual-Orientation and Gender Minorities in Astronomy</h1>
         <p>Inspired by AAS SGMA</p>
     </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="OutList.html">Outlist</a>
+    </nav>
 
     <div class="content">
         <h2>About Us</h2>
@@ -94,3 +106,4 @@ footer {
 </body>
 
 </html>
+
